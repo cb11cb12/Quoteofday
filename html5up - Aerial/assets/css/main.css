@@ -583,15 +583,16 @@ input, select, textarea {
 			text-decoration:none;
 			font-family:'Roboto',sans-serif;
 			font-weight:300;
-			background-color: silver;
+			background-color: rgb(114, 117, 121)
 			text-align: center;
 			transition: all 0.2s;
 			opacity: 300;
+			color: black
 			
 			}
 		.button1:hover{
-			color:#000000;
-			background-color:#FFFFFF;
+			color:#f8f5f5;
+			background-color: rgb(105, 165, 189, .3);
 			}
 
 		#header nav {

@@ -2,12 +2,12 @@ $('button').on('click', quoteOfDay);
 
 function quoteOfDay(){
   $.ajax({
-    url: 'https://api.quotable.io/quotes/random',
+    url: 'https://quotes-api-self.vercel.app/quote',
     dataType: 'json',
     success: function(data) {
       console.log(data);
-      $('h3').text(`by ${data[0].author}`);
-      $('h2').text(`"${data[0].content}"`);
+      $('h3').text(`by ${data.author}`);
+      $('h2').text(`"${data.quote}"`);
       // $('img').attr('src', data.url);
     },
     error: function(err) {
@@ -16,11 +16,7 @@ function quoteOfDay(){
   });
 }
 
-
-
-
 // //Example fetch using api.quotable.io
-
 
 // document.querySelector('button').addEventListener('click', quoteOfDay)
 
